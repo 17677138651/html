@@ -1,0 +1,52 @@
+#content {
+    /* 边框大小 */
+    width: 380px;
+    /* 设置宽高 */
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    /* 字体样式      */
+    font-size: 12px;
+    line-height: 25px;
+    /* 边框 */
+    border: 1px solid #000;
+}
+
+
+
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    /* 去掉园点样式 */
+    list-style: none;
+}
+
+
+/* 子绝父对 */
+#content ul{
+    /* 相对定位 */
+    position: relative;
+}
+.tipText, .tipBg{
+    /* 绝对定位 */
+    position: absolute;
+    width: 380px;
+    height: 25px;
+    top: 290px;
+    color: orange;
+}
+
+.tipBg{
+    /* 背景颜色 */
+    background-color: rgb(0, 89, 255);
+}
+
+.tipText{
+    color: white;
+    /* 背景层级调整为999 */
+    z-index: 999;
+}
+
+
+
+/* opacity:0.5  调整背景透明度 */
